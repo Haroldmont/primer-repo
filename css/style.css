@@ -151,6 +151,12 @@ header {
   transition: all 0.5s;
 }
 
+.nav__link--button1 {
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+  font-size: 1.3em;
+}
+
 .nav__link--button span {
   position: absolute;
   background-color: #c2a74f;
@@ -264,6 +270,24 @@ header {
 .experience__text {
   margin-top: 1rem;
   font-size: 1.3rem;
+}
+
+.section__title--work {
+  text-align: center;
+  padding-bottom: 2em;
+  font-size: 1.8em;
+}
+
+.section__subtitle--work {
+  text-align: center;
+  padding-bottom: 2em;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.section__subtitle--link {
+  text-decoration: none;
+  color: #c2a74f;
 }
 
 .portfolio {

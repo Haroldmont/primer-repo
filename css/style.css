@@ -1,3 +1,5 @@
+/* COLORS */
+/* FONT */
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +14,6 @@ img {
   max-width: 100%;
 }
 
-.container {
-  width: 95%;
-  max-width: 1320px;
-  margin: 0 auto;
-}
-
 header {
   background: linear-gradient(to right, #1d1f1d, #464745);
   padding: 0.5rem 0;
@@ -26,6 +22,12 @@ header {
   top: 0;
   z-index: 1;
   text-align: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 1320px;
+  margin: 0 auto;
 }
 
 .col {
@@ -211,25 +213,18 @@ header {
   text-transform: none;
 }
 
-.contact-section {
-  background: #ffffff;
-  padding: 8rem 0 2rem 0;
-  height: 100%;
-  width: 100%;
-}
-
 /*CODE SECTION*/
 .code {
   background-color: rgb(24, 133, 96);
   padding: 1rem;
 }
 .code .code__text {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-style: italic;
   text-align: center;
-  background: linear-gradient(90deg, rgb(103, 21, 165), rgb(255, 255, 255), rgb(103, 21, 165)) 0 0/400% 100%;
-  animation: move-bg 6s infinite linear;
+  background: linear-gradient(90deg, rgb(194, 167, 79), rgb(33, 33, 33)) 0 0/400% 100%;
+  animation: move-bg 10s infinite linear;
   color: transparent;
   -webkit-background-clip: text;
 }
@@ -255,27 +250,30 @@ header {
   text-align: center;
   transition: all 0.1s;
 }
+.experience .experience__logo-box:hover {
+  font-size: 3rem;
+  font-weight: bold;
+}
 .experience .experience__logo-box .experience__text {
   margin-top: 1rem;
   font-size: 1.3rem;
 }
 
-.experience__logo-box:hover {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
 /*SERVICES SECTION*/
 .services {
   padding: 1rem;
-  background-color: rgb(56, 56, 56);
+  background-color: rgb(33, 33, 33);
 }
 .services .services__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(194, 167, 79);
   text-align: left;
   padding-bottom: 1rem;
 }
 .services .services__description {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: gray;
   text-align: left;
 }
 .services .services__img {
@@ -283,12 +281,21 @@ header {
 }
 .services .services__button {
   margin-top: 1.5rem;
-  font-size: 1.5rem;
+  padding: 3px 8px;
+  font-size: 1.3rem;
   transition: all 0.1s;
+  text-decoration: none;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+}
+.services .services__button .services__link {
+  text-decoration: none;
+  color: black;
 }
 .services .services__button:hover {
   font-size: 1.8rem;
-  background-color: #c2a74f;
+  background-color: rgb(24, 133, 96);
 }
 
 /*PRODUCTS SECTION*/
@@ -296,11 +303,14 @@ header {
   padding: 1rem;
 }
 .products .products__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(194, 167, 79);
   text-align: left;
   padding-bottom: 1rem;
 }
 .products .products__description {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: left;
 }
 .products .products__img {
@@ -308,40 +318,47 @@ header {
 }
 .products .products__button {
   margin-top: 1.5rem;
-  font-size: 1.5rem;
+  padding: 3px 8px;
+  font-size: 1.3rem;
   transition: all 0.1s;
   text-decoration: none;
-  color: #c2a74f;
+  background-color: black;
+  border: none;
+  border-radius: 1rem;
+}
+.products .products__button .products__link {
+  text-decoration: none;
+  color: white;
 }
 .products .products__button:hover {
   font-size: 1.8rem;
-  background-color: #c2a74f;
+  background-color: rgb(24, 133, 96);
 }
 
 /*GALLERY SECTION*/
 .gallery .gallery__title {
   text-align: center;
   padding: 1.5em 0em;
-  font-size: 1.8em;
-  background-color: rgb(56, 56, 56);
+  font-size: 1.5rem;
+  background-color: rgb(33, 33, 33);
 }
 .gallery .gallery__subtitle {
   text-align: center;
   padding-bottom: 2em;
   font-weight: bold;
-  font-size: 1.3em;
-  background-color: rgb(56, 56, 56);
+  font-size: 1.3rem;
+  background-color: rgb(33, 33, 33);
 }
 .gallery .gallery__subtitle .gallery__link {
   text-decoration: none;
-  color: #c2a74f;
+  color: rgb(194, 167, 79);
 }
 
 /*PORTFOLIO SECTION*/
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  background-color: rgb(56, 56, 56);
+  background-color: rgb(33, 33, 33);
 }
 .portfolio .portfolio__item {
   overflow: hidden;
@@ -358,6 +375,98 @@ header {
 .portfolio .portfolio__item .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: 0.75;
+}
+
+/*PRODUCTS CARDS*/
+.card_product {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.card_product_article {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.card_product_img {
+  order: -1;
+  align-self: center;
+}
+
+.card_title {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.card_product_button {
+  margin-top: auto;
+  background: black;
+  color: white;
+  transition: all 0.1s;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.card_product_button:hover {
+  font-size: 1.4rem;
+  background-color: rgb(24, 133, 96);
+}
+
+/*ESTILOS FOOTER*/
+.footer {
+  padding-top: 1rem;
+  background-color: black;
+}
+.footer .footer-sm {
+  background-color: rgb(33, 33, 33);
+  color: white;
+  font-style: italic;
+}
+.footer .footer-sm .footer-sm__icons {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+.footer .footer-sm .footer-sm__icons a {
+  color: rgb(194, 167, 79);
+}
+.footer .footer-sm .footer-sm__icons a i {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+.footer .footer-bottom {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.footer .footer-bottom .footer-bottom__copyright {
+  justify-content: center;
+  text-align: center;
+  color: gray;
+  font-weight: 400;
+}
+.footer .footer-bottom .footer-bottom__copyright a {
+  color: gray;
+  text-decoration: none;
+}
+.footer .footer-bottom .footer-bottom__copyright a:hover {
+  color: rgb(194, 167, 79);
+  text-decoration: underline;
+}
+
+.contact-section {
+  background: #ffffff;
+  padding: 8rem 0 2rem 0;
+  height: 100%;
+  width: 100%;
 }
 
 /*TENDENCIAS*/
@@ -381,57 +490,6 @@ iframe {
 
 .tendencias--items {
   padding-bottom: 1em;
-}
-
-/*ESTILOS FOOTER*/
-.footer {
-  padding-top: 1rem;
-  background-color: black;
-}
-
-.footer-sm {
-  background-color: #212121;
-  color: white;
-  font-style: italic;
-}
-
-.footer-sm a {
-  color: #c2a74f;
-}
-
-.footer-sm a i {
-  font-size: 3rem;
-  margin-left: 1rem;
-}
-
-.footer-sm__icons {
-  text-align: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  margin: 0 auto;
-  font-size: 1.5rem;
-}
-
-.footer-bottom {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.footer-bottom__copyright {
-  justify-content: center;
-  text-align: center;
-  color: gray;
-  font-weight: 400;
-}
-
-.footer-bottom__copyright a {
-  color: gray;
-  text-decoration: none;
-}
-
-.footer-bottom__copyright a:hover {
-  color: #c2a74f;
-  text-decoration: underline;
 }
 
 /*MEDIA QUERIES*/

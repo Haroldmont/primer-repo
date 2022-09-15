@@ -1,0 +1,43 @@
+/*PRODUCTS CARDS*/
+
+.card_product {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.card_product_article {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.card_product_img {
+  order: -1;
+  align-self: center;
+}
+
+.card_title {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.card_product_button {
+  margin-top: auto;
+  background: black;
+  color: white;
+  transition: all 0.1s;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  &:hover {
+    font-size: 1.4rem;
+    background-color: $success-color;
+  }
+}

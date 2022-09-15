@@ -1,0 +1,219 @@
+/*INTRO SECTION*/
+
+.intro-section {
+  background: linear-gradient(to right, #1d1f1d, #464745);
+  padding: 8rem 0 2rem 0;
+  height: 100%;
+  width: 100%;
+}
+
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.display-2--intro {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+}
+.display-2--description {
+  display: block;
+  text-align: center;
+  font-size: $font-title;
+  margin-top: 1.2rem;
+  text-transform: none;
+}
+
+/*CODE SECTION*/
+
+.code {
+  background-color: $success-color;
+  padding: 1rem;
+  .code__text {
+    font-size: $font-title;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    background: linear-gradient(90deg, $gold-color, $dark-color) 0 0 / 400% 100%;
+    animation: move-bg 10s infinite linear;
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
+@keyframes move-bg {
+  to {
+    background-position: 400% 0;
+  }
+}
+
+/*EXPERIENCE SECTION */
+
+.experience {
+  padding: 0 0 5rem 0;
+  margin-top: 2rem;
+
+  .experience__title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: $font-title;
+  }
+
+  .experience__logo-box {
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    transition: all 0.1s;
+
+    &:hover {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .experience__text {
+      margin-top: 1rem;
+      font-size: $font-description;
+    }
+  }
+}
+
+/*SERVICES SECTION*/
+
+.services {
+  padding: 1rem;
+  background-color: $dark-color;
+
+  .services__title {
+    font-size: $font-title;
+    font-weight: bold;
+    color: $gold-color;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+  .services__description {
+    font-size: $font-description;
+    color: gray;
+    text-align: left;
+  }
+  .services__img {
+    align-items: flex-end;
+  }
+
+  .services__button {
+    margin-top: 1.5rem;
+    padding: 3px 8px;
+    font-size: $font-description;
+    transition: all 0.1s;
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+
+    .services__link {
+      text-decoration: none;
+      color: black;
+    }
+
+    &:hover {
+      font-size: 1.8rem;
+      background-color: $success-color;
+    }
+  }
+}
+
+/*PRODUCTS SECTION*/
+
+.products {
+  padding: 1rem;
+
+  .products__title {
+    font-size: $font-title;
+    font-weight: bold;
+    color: $gold-color;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+  .products__description {
+    font-size: $font-description;
+    text-align: left;
+  }
+  .products__img {
+    align-items: flex-end;
+  }
+
+  .products__button {
+    margin-top: 1.5rem;
+    padding: 3px 8px;
+    font-size: $font-description;
+    transition: all 0.1s;
+    text-decoration: none;
+    background-color: black;
+    border: none;
+    border-radius: 1rem;
+
+    .products__link {
+      text-decoration: none;
+      color: white;
+    }
+
+    &:hover {
+      font-size: 1.8rem;
+      background-color: $success-color;
+    }
+  }
+}
+
+/*GALLERY SECTION*/
+
+.gallery {
+  .gallery__title {
+    text-align: center;
+    padding: 1.5em 0em;
+    font-size: $font-title;
+    background-color: $dark-color;
+  }
+  .gallery__subtitle {
+    text-align: center;
+    padding-bottom: 2em;
+    font-weight: bold;
+    font-size: $font-description;
+    background-color: $dark-color;
+    .gallery__link {
+      text-decoration: none;
+      color: $gold-color;
+    }
+  }
+}
+
+/*PORTFOLIO SECTION*/
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: $dark-color;
+
+  .portfolio__item {
+    overflow: hidden;
+    justify-self: center;
+
+    .portfolio__img {
+      transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
+        opacity 250ms linear;
+    }
+
+    .portfolio__item:focus {
+      position: relative;
+      z-index: 2;
+    }
+
+    .portfolio__img:hover,
+    .portfolio__item:focus .portfolio__img {
+      transform: scale(1.2);
+      opacity: 0.75;
+    }
+  }
+}

@@ -377,6 +377,25 @@ header {
   opacity: 0.75;
 }
 
+/*TENDENCIAS*/
+#tendencias {
+  margin: 0 1.4em;
+  text-align: center;
+}
+
+.tendencias--tittle {
+  padding: 1.5rem 0;
+}
+
+.tendencias--description {
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+
+.tendencias--items {
+  padding-bottom: 1em;
+}
+
 /*PRODUCTS CARDS*/
 .card_product {
   margin: 2rem 0;
@@ -417,6 +436,22 @@ header {
 .card_product_button:hover {
   font-size: 1.4rem;
   background-color: rgb(24, 133, 96);
+}
+
+.contact-title {
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.line-form {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+iframe {
+  padding: 2rem 0;
 }
 
 /*ESTILOS FOOTER*/
@@ -460,36 +495,6 @@ header {
 .footer .footer-bottom .footer-bottom__copyright a:hover {
   color: rgb(194, 167, 79);
   text-decoration: underline;
-}
-
-.contact-section {
-  background: #ffffff;
-  padding: 8rem 0 2rem 0;
-  height: 100%;
-  width: 100%;
-}
-
-/*TENDENCIAS*/
-#tendencias {
-  margin: 0 1.4em;
-  text-align: center;
-}
-
-.tendencias--tittle {
-  padding: 1.5rem 0;
-}
-
-.tendencias--description {
-  text-align: justify;
-  padding-bottom: 1rem;
-}
-
-iframe {
-  padding: 1rem 0;
-}
-
-.tendencias--items {
-  padding-bottom: 1em;
 }
 
 /*MEDIA QUERIES*/

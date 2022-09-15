@@ -2,39 +2,11 @@
 @import "global";
 @import "navbar";
 @import "index";
+@import "tendencias";
+@import "servicios";
 @import "productos";
+@import "contacto";
 @import "footer";
-
-.contact-section {
-  background: #ffffff;
-  padding: 8rem 0 2rem 0;
-  height: 100%;
-  width: 100%;
-}
-
-/*TENDENCIAS*/
-
-#tendencias {
-  margin: 0 1.4em;
-  text-align: center;
-}
-
-.tendencias--tittle {
-  padding: 1.5rem 0;
-}
-
-.tendencias--description {
-  text-align: justify;
-  padding-bottom: 1rem;
-}
-
-iframe {
-  padding: 1rem 0;
-}
-
-.tendencias--items {
-  padding-bottom: 1em;
-}
 
 /*MEDIA QUERIES*/
 

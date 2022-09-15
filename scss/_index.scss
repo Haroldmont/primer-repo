@@ -41,7 +41,7 @@
     background: linear-gradient(90deg, $gold-color, $dark-color) 0 0 / 400% 100%;
     animation: move-bg 10s infinite linear;
     color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
   }
 }
 

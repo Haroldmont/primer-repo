@@ -226,7 +226,7 @@ header {
   background: linear-gradient(90deg, rgb(194, 167, 79), rgb(33, 33, 33)) 0 0/400% 100%;
   animation: move-bg 10s infinite linear;
   color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 @keyframes move-bg {

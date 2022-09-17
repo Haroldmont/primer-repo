@@ -1,5 +1,6 @@
 /* COLORS */
 /* FONT */
+/* BOX-SHADOW */
 * {
   margin: 0;
   padding: 0;
@@ -396,6 +397,10 @@ header {
   padding-bottom: 1em;
 }
 
+.body {
+  background-image: url("image.jpg");
+}
+
 /*PRODUCTS CARDS*/
 .card_product {
   margin: 2rem 0;
@@ -446,12 +451,54 @@ header {
 }
 
 .line-form {
-  margin: 1rem 0;
+  margin: 1rem 0 1rem 20px;
   font-size: 1.3rem;
+}
+
+.form-section {
+  background-color: rgb(33, 33, 33);
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  box-shadow: 7px 7px 7px #000;
+}
+
+.controls {
+  width: 100%;
+  background-color: rgb(33, 33, 33);
+  color: white;
+  margin-bottom: 16px;
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  border: 1px solid rgb(194, 167, 79);
+}
+
+.controls--consulta {
+  padding: 10px 10px 80px 10px;
+  width: 100%;
+  background-color: rgb(33, 33, 33);
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  border: 1px solid rgb(194, 167, 79);
+  color: white;
+}
+
+.botons {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.3rem;
+}
+.botons:hover {
+  background-color: rgb(24, 133, 96);
+  border-radius: 3px;
 }
 
 iframe {
   padding: 2rem 0;
+  margin-left: 20px;
+  height: 100%;
 }
 
 /*ESTILOS FOOTER*/

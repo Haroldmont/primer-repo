@@ -5,10 +5,50 @@
   font-size: $font_title;
 }
 .line-form {
-  margin: 1rem 0;
+  margin: 1rem 0 1rem 20px;
   font-size: $font_description;
+}
+
+.form-section {
+  background-color: $dark-color;
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  box-shadow: $box-shadow;
+}
+.controls {
+  width: 100%;
+  background-color: $dark-color;
+  color: white;
+  margin-bottom: 16px;
+  padding: 10px;
+  font-size: $font_description;
+  border-radius: 3px;
+  border: 1px solid $gold-color;
+}
+.controls--consulta {
+  padding: 10px 10px 80px 10px;
+  width: 100%;
+  background-color: $dark-color;
+  margin-bottom: 16px;
+  font-size: $font_description;
+  border-radius: 3px;
+  border: 1px solid $gold-color;
+  color: white;
+}
+.botons {
+  width: 100%;
+  padding: 10px 0;
+  font-size: $font_description;
+
+  &:hover {
+    background-color: $success-color;
+    border-radius: 3px;
+  }
 }
 
 iframe {
   padding: 2rem 0;
+  margin-left: 20px;
+  height: 100%;
 }
